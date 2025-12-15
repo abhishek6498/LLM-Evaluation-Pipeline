@@ -45,7 +45,7 @@ Within this category, G-Eval was chosen because it explicitly combines metric de
 
 Hybrid approaches such as BERTScore and MoverScore were also not used. While they incorporate contextual embeddings, they remain limited by the biases and contextual constraints of pre-trained models like BERT and lack explicit grounding against provided context, making them less reliable for evaluating hallucination and factual accuracy in conversational AI.
 
---
+---
 
 ## Input Data
 The evaluation operates on two provided JSON inputs:
