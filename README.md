@@ -47,19 +47,6 @@ Hybrid approaches such as BERTScore and MoverScore were also not used. While the
 
 ---
 
-## Input Data
-The evaluation operates on two provided JSON inputs:
-
-### 1. Conversation JSON
-- Contains a multi-turn chat between a user and an assistant.
-- Used to construct conversational test cases.
-
-### 2. Context Vector JSON
-- Contains text chunks fetched from a vector database for a specific user message.
-- Treated as the **available supporting knowledge** for evaluation.
-
----
-
 ## Local Setup & Execution
 
 ### Prerequisites
@@ -87,6 +74,19 @@ setx OPENAI_MODEL "gpt-3.5-turbo"
 
 ### Run the Evaluation Pipeline
 python llm_evaluation_pipeline.py
+
+---
+
+## Input Data
+The evaluation operates on two provided JSON inputs:
+
+### 1. Conversation JSON
+- Contains a multi-turn chat between a user and an assistant.
+- Used to construct conversational test cases.
+
+### 2. Context Vector JSON
+- Contains text chunks fetched from a vector database for a specific user message.
+- Treated as the **available supporting knowledge** for evaluation.
 
 ---
 
